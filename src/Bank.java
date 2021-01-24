@@ -47,7 +47,7 @@ public class Bank {
                 lockdown(name, username, password);
             }else { // If the user still has attempts to login, it will prompt them the login page again.
                 
-                System.out.println("\nIncorrect username and/or password, you have " + tries + " attempts left.");
+                System.out.println("\nIncorrect username and/or password, you have " + tries + " attempt(s) left.");
 
                 try {
                     Thread.sleep(6 * 1000);
