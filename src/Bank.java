@@ -104,7 +104,7 @@ public class Bank {
     static void balance(String name, String username, String password) { // Here, the user can check their account balance without doing anything to their account.
 
         System.out.println("\n--------------------------------------");
-        System.out.println("Welcome " + name + ". Here is your total account balance: " + balance);
+        System.out.println("Welcome " + name + ". Here is your total account balance: $" + balance);
 
         System.out.println("\nGo back to main menu?");
         System.out.println("1. Yes");
@@ -122,13 +122,13 @@ public class Bank {
     static void deposit(String name, String username, String password) { // Here, the user can add money to their account.
 
         System.out.println("\n--------------------------------------");
-        System.out.println("How much would you like to add to your current balance of " + balance + "?");
+        System.out.println("How much would you like to add to your current balance of $" + balance + "?");
         Scanner add = new Scanner(System.in);
         double adding = add.nextDouble();
 
         balance = balance + adding;
 
-        System.out.println("\nYour funds have been added! Your new balance is " + balance);
+        System.out.println("\nYour funds have been added! Your new balance is $" + balance);
 
         System.out.println("\nGo back to main menu?");
         System.out.println("1. Yes");
@@ -149,13 +149,13 @@ public class Bank {
     static void withdraw(String name, String username, String password) { // Here, the user can remove money to their account.
 
         System.out.println("\n--------------------------------------");
-        System.out.println("How much would you like to withdraw from your current balance of " + balance + "?");
+        System.out.println("How much would you like to withdraw from your current balance of $" + balance + "?");
         Scanner remove = new Scanner(System.in);
         double removing = remove.nextDouble();
 
         balance = balance - removing;
 
-        System.out.println("\nYour funds have been withdrawed! Your new balance is " + balance);
+        System.out.println("\nYour funds have been withdrawed! Your new balance is $" + balance);
 
         System.out.println("\nGo back to main menu?");
         System.out.println("1. Yes");
